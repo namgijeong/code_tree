@@ -6,7 +6,7 @@ def include369(n):
     while mok !=0 :
         namage = mok%10
         mok = mok // 10
-        if namage%3 ==0:
+        if namage == 3 or namage == 6 or namage == 9:
             return True
 
     return False    

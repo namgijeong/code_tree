@@ -4,7 +4,7 @@ def include369(n):
     mok = n
     namage = 0
     while mok !=0 :
-        namage = n%10
+        namage = mok%10
         mok = mok // 10
         if namage%3 ==0:
             return True

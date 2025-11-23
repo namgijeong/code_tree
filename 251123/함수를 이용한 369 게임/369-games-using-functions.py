@@ -3,7 +3,7 @@ a, b = map(int, input().split())
 def include369(n):
     digit_10 = n//10
     digit_1 = n%10
-    if digit_10 == 3 || digit_10 == 6 || digit_10 == 9 || digit_1 == 3 || digit_1 == 6 || digit_1 == 9:
+    if digit_10%3 == 0 || digit_1%3 ==0:
         return True
     else:
         return False    

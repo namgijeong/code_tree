@@ -22,8 +22,7 @@ n, m = map(int, input().split())
 
 # max_yaksu(n,m)    
 
-# 변수 선언 및 입력:
-n, m = tuple(map(int, input().split()))
+
 
 
 # n과 m의 최대공약수를 반환합니다.

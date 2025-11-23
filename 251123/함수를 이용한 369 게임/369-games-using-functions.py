@@ -1,12 +1,16 @@
 a, b = map(int, input().split())
 
 def include369(n):
-    digit_10 = n//10
-    digit_1 = n%10
-    if digit_10%3 == 0 or digit_1%3 ==0:
-        return True
-    else:
-        return False    
+    mok = n
+    namage = 0
+    while mok !=0 :
+        namage = n%10
+        mok = mok // 10
+        if namage%3 ==0:
+            return True
+
+    return False    
+      
 
 def count369(a,b):
     count = 0

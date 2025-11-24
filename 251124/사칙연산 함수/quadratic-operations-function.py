@@ -3,17 +3,21 @@ a = int(a)
 c = int(c)
 
 def calc(a,o,c):
-    switch(o):
-        case '+':
-            print(a+c)
-        case '-':
-            print(a-c)    
-        case '*':
-            print(a*c)
-        case '/':
-            print(a//c)
-        default:
-            print('False')     
+    match o:
+        case'+':
+            print(f"{a} + {c }= {a+c}")
             
+        case'-':
+            print(f"{a} - {c} = {a-c}")
+            
+        case'*':
+            print(f"{a} * {c} = {a*c}")
+            
+        case'/':
+            print(f"{a} / {c} = {a/c}")
+            
+        case '_':
+            print('False')     
+
 
 calc(a,o,c)                   

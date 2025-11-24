@@ -30,7 +30,7 @@ def is_suyal(n1,n2,a,b):
 
     is_true = True
     for i in range(n2):
-        if a[a_start_index] != b[b_start_index]:
+        if a_start_index < n1 and b_start_index < n2 and a[a_start_index] != b[b_start_index]:
             is_true = False
             break
         else:

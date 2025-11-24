@@ -16,7 +16,7 @@ def calc(a,o,c):
         case'/':
             print(f"{a} / {c} = {a//c}")
             
-        case '_':
+        case _:
             print('False')     
 
 

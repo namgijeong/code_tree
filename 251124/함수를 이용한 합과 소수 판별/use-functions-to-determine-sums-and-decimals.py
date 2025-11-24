@@ -25,7 +25,7 @@ def isDigitSumEven(n):
 
 count = 0
 for i in range(a, b+1):
-    if isSosu(i) and isDigitSumEven(n):
+    if isSosu(i) and isDigitSumEven(i):
         count += 1
 
 

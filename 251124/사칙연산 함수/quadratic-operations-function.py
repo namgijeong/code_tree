@@ -5,7 +5,7 @@ c = int(c)
 def calc(a,o,c):
     match o:
         case'+':
-            print(f"{a} + {c }= {a+c}")
+            print(f"{a} + {c} = {a+c}")
             
         case'-':
             print(f"{a} - {c} = {a-c}")

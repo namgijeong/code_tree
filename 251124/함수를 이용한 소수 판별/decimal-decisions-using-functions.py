@@ -6,7 +6,7 @@ def isSosu(a,b):
     for i in range(a, b+1):
         for j in range(2,i):
             if i%j == 0:
-                sum_n = i
+                sum_n += i
 
     return sum_n
 

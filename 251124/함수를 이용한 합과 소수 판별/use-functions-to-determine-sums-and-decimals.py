@@ -13,7 +13,7 @@ def isDigitSumEven(n):
     
     sum_n = 0
     while mok != 0:
-        namage = n%10
+        namage = mok%10
         mok = mok / 10      
         sum_n += namage  
 

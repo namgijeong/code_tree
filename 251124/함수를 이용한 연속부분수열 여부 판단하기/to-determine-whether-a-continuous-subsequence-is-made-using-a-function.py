@@ -22,23 +22,27 @@ def find_start_index(n1,n2,a,b):
                 return
 
 
-find_start_index(n1,n2,a,b)
 
+def is_suyal(n1,n2,a,b):
+    find_start_index(n1,n2,a,b)
+    global b_start_index
+    global a_start_index
 
-is_true = True
-for i in range(n2):
-    if a[a_start_index] != b[b_start_index]:
-        is_true = False
-        break
+    is_true = True
+    for i in range(n2):
+        if a[a_start_index] != b[b_start_index]:
+            is_true = False
+            break
+        else:
+            a_start_index += 1    
+            b_start_index += 1
+
+    if is_true == True:
+        print('Yes')
     else:
-        a_start_index += 1    
-        b_start_index += 1
+        print('No') 
 
-   
 
-if is_true == True:
-    print('Yes')
-else:
-    print('No')    
+is_suyal(n1,n2,a,b)       
 
 

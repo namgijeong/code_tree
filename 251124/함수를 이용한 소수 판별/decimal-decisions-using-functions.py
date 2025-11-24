@@ -13,4 +13,4 @@ def isSosu(a,b):
 
     return sum_n
 
-isSosu(a,b)                
+print(isSosu(a,b))               

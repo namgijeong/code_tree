@@ -30,9 +30,10 @@ def is_suyal(n2,a,b):
 
     count = 0
     for i in range(n2):
-        if (a_start_index + i) < n1 and (i) < n2 and a[a_start_index + i] != b[i]:
+        if (a_start_index + i) < n1  and a[a_start_index + i] != b[i]:
             return False
-        count += 1    
+        elif (a_start_index + i) < n1  and a[a_start_index + i] == b[i]:    
+            count += 1    
 
     #인덱스를 벗어나서 b 길이만큼 검사못했을 수도 있다 
     if count == n2:

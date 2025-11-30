@@ -4,7 +4,7 @@ pattern = input()
 def is_same(text_n, pattern_n, text_start_index):
     count = 0
     for i in range(pattern_n):
-        if text[text_start_index + i] == pattern[i]:
+        if text_start_index + i < text_n and text[text_start_index + i] == pattern[i]:
             count += 1
 
     if count == pattern_n:

@@ -17,4 +17,4 @@ def is_palindrome(A):
 # else:
 #     print("No")    
 
-if is_palindrome(A)
+is_palindrome(A)

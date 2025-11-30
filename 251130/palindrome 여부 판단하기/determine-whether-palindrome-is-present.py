@@ -7,7 +7,12 @@ def is_palindrome(A):
 
     else:
         if A[0] == A[-1]:
-            return is_palindrome(A[1:-1])
+            if len(A) >= 3:
+                return is_palindrome(A[1:-1])
+            else:     
+                print('Yes')
+                return
+           
         else:
             print("No")
             return     
